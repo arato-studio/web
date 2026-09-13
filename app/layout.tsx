@@ -29,6 +29,11 @@ export default function RootLayout({
         </header>
 
         <main className="flex-1 flex flex-col items-center  px-8 py-8 overflow-auto gap-8">
+          <img
+            aria-hidden="true"
+            src="/background.webp"
+            className="fixed top-0 left-0 -z-5 opacity-50 min-h-screen"
+          />
           {children}
         </main>
 
