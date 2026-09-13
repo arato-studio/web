@@ -3,37 +3,59 @@
 :root {
   /* Rosé Pine Dawn*/
   --rpd-base: #faf4ed;
+  --background-1: var(--rpd-base);
+
   --rpd-surface: #fffaf3;
+  --background-2: var(--rpd-surface);
+
   --rpd-overlay: #f2e9e1;
+  --background-3: var(--rpd-overlay);
+
   --rpd-muted: #9893a5;
+  --muted: var(--rpd-muted);
+
   --rpd-subtle: #797593;
-  --rpd-text: #464261;
+
+  --foreground: var(--rpd-text);
+  --foreground-bright: black;
+
   --rpd-love: #b4637a;
+  --love: var(--rpd-love);
+
   --rpd-gold: #ea9d34;
   --rpd-rose: #d7827e;
+
   --rpd-pine: #286983;
+  --pine: var(--rpd-pine);
+
   --rpd-foam: #56949f;
+
   --rpd-iris: #907aa9;
+  --iris: var(--rpd-iris);
+
   --rpd-highlight-low: #f4ede8;
   --rpd-highlight-med: #dfdad9;
   --rpd-highlight-high: #cecacd;
 
-  --background-1: var(--rpd-base);
-  --background-2: var(--rpd-surface);
-  --background-3: var(--rpd-overlay);
-  --foreground: var(--rpd-text);
-  --muted: var(--rpd-muted);
-  --primary: var(--rpd-iris);
+  --cl-green: #40a02b;
+  --c-green: var(--cl-green);
 }
 
 @theme inline {
   --color-background-1: var(--background-1);
   --color-background-2: var(--background-2);
   --color-background-3: var(--background-3);
-  --color-foreground: var(--foreground);
-  --color-rpd-text: var(--rpd-text);
+
   --color-muted: var(--muted);
-  --color-primary: var(--primary);
+  --color-foreground: var(--foreground);
+  --color-foreground-bright: var(--foreground-bright);
+
+  --color-love: var(--love);
+  --color-pine: var(--pine);
+  --color-iris: var(--iris);
+  --color-c-green: var(--c-green);
+
+  --color-primary: var(--iris);
   --font-sans: var(--font-go-mono);
   --font-mono: var(--font-go-mono);
 }
@@ -42,27 +64,43 @@
   :root {
     /* Rosé Pine */
     --rp-base: #191724;
+    --background-1: var(--rp-base);
+
     --rp-surface: #1f1d2e;
+    --background-2: var(--rp-surface);
+
     --rp-overlay: #26233a;
+    --background-3: var(--rp-overlay);
+
     --rp-muted: #6e6a86;
+    --muted: var(--rp-muted);
+
     --rp-subtle: #908caa;
+
     --rp-text: #e0def4;
+    --foreground: var(--rp-text);
+    --foreground-bright: white;
+
     --rp-love: #eb6f92;
+    --love: var(--rp-love);
+
     --rp-gold: #f6c177;
     --rp-rose: #ebbcba;
+
     --rp-pine: #31748f;
+    --pine: var(--rp-pine);
+
     --rp-foam: #9ccfd8;
+
     --rp-iris: #c4a7e7;
+    --iris: var(--rp-iris);
+
     --rp-highlight-low: #21202e;
     --rp-highlight-med: #403d52;
     --rp-highlight-high: #524f67;
 
-    --background-1: var(--rp-base);
-    --background-2: var(--rp-surface);
-    --background-3: var(--rp-overlay);
-    --foreground: var(--rp-text);
-    --muted: var(--rp-muted);
-    --primary: var(--rp-iris);
+    --cm-green: #a6da95;
+    --green: var(--cm-green);
   }
 }
 
