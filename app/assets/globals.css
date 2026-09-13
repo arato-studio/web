@@ -1,23 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  --background: #faf4ed;
-  --background-2: #fffaf3;
-  --background-3: #f2e9e1;
-  --foreground: #464261;
-  --text-rpd: #e0def4;
-  --foreground-invert: #e0def4;
-  --muted: #6e6a86;
-  --primary: #3884a2;
+  /* Rosé Pine Dawn*/
+  --rpd-base: #faf4ed;
+  --rpd-surface: #fffaf3;
+  --rpd-overlay: #f2e9e1;
+  --rpd-muted: #9893a5;
+  --rpd-subtle: #797593;
+  --rpd-text: #464261;
+  --rpd-love: #b4637a;
+  --rpd-gold: #ea9d34;
+  --rpd-rose: #d7827e;
+  --rpd-pine: #286983;
+  --rpd-foam: #56949f;
+  --rpd-iris: #907aa9;
+  --rpd-highlight-low: #f4ede8;
+  --rpd-highlight-med: #dfdad9;
+  --rpd-highlight-high: #cecacd;
+
+  --background-1: var(--rpd-base);
+  --background-2: var(--rpd-surface);
+  --background-3: var(--rpd-overlay);
+  --foreground: var(--rpd-text);
+  --muted: var(--rpd-muted);
+  --primary: var(--rpd-iris);
 }
 
 @theme inline {
-  --color-background: var(--background);
+  --color-background-1: var(--background-1);
   --color-background-2: var(--background-2);
   --color-background-3: var(--background-3);
   --color-foreground: var(--foreground);
-  --color-text-rpd: var(--text-rpd);
-  --color-foreground-invert: var(--foreground-invert);
+  --color-rpd-text: var(--rpd-text);
   --color-muted: var(--muted);
   --color-primary: var(--primary);
   --font-sans: var(--font-go-mono);
@@ -26,18 +40,34 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #191724;
-    --background-2: #1f1d2e;
-    --background-3: #26233a;
-    --foreground: #e0def4;
-    --foreground-invert: #464261;
-    --muted: #9893a5;
-    --primary: #31748f;
+    /* Rosé Pine */
+    --rp-base: #191724;
+    --rp-surface: #1f1d2e;
+    --rp-overlay: #26233a;
+    --rp-muted: #6e6a86;
+    --rp-subtle: #908caa;
+    --rp-text: #e0def4;
+    --rp-love: #eb6f92;
+    --rp-gold: #f6c177;
+    --rp-rose: #ebbcba;
+    --rp-pine: #31748f;
+    --rp-foam: #9ccfd8;
+    --rp-iris: #c4a7e7;
+    --rp-highlight-low: #21202e;
+    --rp-highlight-med: #403d52;
+    --rp-highlight-high: #524f67;
+
+    --background-1: var(--rp-base);
+    --background-2: var(--rp-surface);
+    --background-3: var(--rp-overlay);
+    --foreground: var(--rp-text);
+    --muted: var(--rp-muted);
+    --primary: var(--rp-iris);
   }
 }
 
 body {
-  background: var(--background);
+  background: var(--background-1);
   color: var(--foreground);
   font-family: var(--font-go-mono);
 }
