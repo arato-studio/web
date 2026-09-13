@@ -100,7 +100,7 @@
     --rp-highlight-high: #524f67;
 
     --cm-green: #a6da95;
-    --green: var(--cm-green);
+    --c-green: var(--cm-green);
   }
 }
 
