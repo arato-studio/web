@@ -54,10 +54,60 @@ export default function Home() {
       </section>
 
       <section
-        id="team"
-        className="flex flex-col flex-wrap gap-4 items-center justify-center"
+        id="pricing"
+        className="flex flex-col flex-wrap justify-center items-center gap-4"
       >
-        <h2 className="text-xl md:text-2xl text-center">
+        <h2 className="text-2xl md:text-4xl text-center">Estimasi Biaya</h2>
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {profile.services.map((service, index) => (
+            <li
+              key={index}
+              className="p-2 rounded-sm border-4 bg-background-3 border-background-1 shadow-xs flex flex-col flex-wrap justify-between space-y-2"
+            >
+              <article className="space-y-2">
+                <div className="text-xs font-bold uppercase tracking-widest px-2 bg-background-1 border-background-2 border-4 rounded-xs size-fit">
+                  {service.category}
+                </div>
+                <h3 className="text-xl md:text-2xl text-foreground-bright">
+                  {service.item}
+                </h3>
+                <div className="text-xs text-subtle">{service.for}</div>
+                <p className="pl-2 border-l-2 ml-2 text-gold text-sm text-shadow-xs">
+                  {service.description}
+                </p>
+              </article>
+
+              <section className="flex flex-col flex-wrap items-end justify-center gap-2">
+                Mulai
+                <div className="text-2xl md:text-4xl font-bold text-c-green text-center">
+                  {service.price}
+                </div>
+                <a
+                  href={
+                    profile.links.find(
+                      (link) => link.label.toLowerCase() === "whatsapp",
+                    )?.to
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-c-green text-black p-2 font-bold uppercase text-center rounded-sm tracking-widest shadow-xs border-4 dark:border-white"
+                >
+                  <span className="text-shadow-xs text-center flex gap-2 items-center justify-center">
+                    <Icon icon="mdi:whatsapp" />
+                    Pesan Paket Ini
+                  </span>
+                </a>
+              </section>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section
+        id="team"
+        className="flex flex-col flex-wrap gap-4 items-center justify-center min-h-192"
+      >
+        <h2 className="text-xl md:text-2xl text-center shadow-xs">
           Tim di Organisasi Kami
         </h2>
         <ul className="flex gap-4 flex-wrap items-center justify-center">
@@ -65,18 +115,23 @@ export default function Home() {
             return (
               <li
                 key={member.github}
-                className="bg-primary rounded-sm border-2"
+                className="border-background-1 bg-background-3 rounded-sm border-4 shadow-xs"
               >
                 <a
                   href={member.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-col-reverse flex flex-wrap p-2"
                 >
-                  <h3 className="text-center text-black font-bold">
-                    {member.name}
-                  </h3>
+                  <span className="flex items-center justify-center gap-2">
+                    <Icon icon="mdi:github" />
+                    <h3 className="text-center text-primary font-bold">
+                      {member.name}
+                    </h3>
+                  </span>
                   <img
                     src={`${member.github}.png`}
-                    className="min-w-32 max-w-32 min-h-32 max-h-32 rounded-sm border-2 border-black"
+                    className="min-w-32 max-w-32 min-h-32 max-h-32 rounded-sm border-4 border-primary"
                   />
                 </a>
               </li>
