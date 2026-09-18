@@ -1,4 +1,5 @@
 import profile_picture from "@/public/profile.webp";
+const github_url = "https://github.com";
 
 export const profile = {
   name: "ARATO Studio",
@@ -29,6 +30,21 @@ export const profile = {
       icon: "lucide:mail",
       to: "mailto:aratostudio2026@gmail.com",
       style: "bg-black text-white",
+    },
+  ],
+
+  members: [
+    {
+      github: `${github_url}/arieeksm`,
+      name: "Arie",
+    },
+    {
+      github: `${github_url}/axelmychro`,
+      name: "Axel",
+    },
+    {
+      github: `${github_url}/ToraEleazarTarigan-251401037`,
+      name: "Tora",
     },
   ],
 };
