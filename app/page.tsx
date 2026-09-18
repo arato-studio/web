@@ -24,7 +24,7 @@ export default function Home() {
 
         <article className="flex flex-col items-center justify-center gap-8 not-md:max-w-prose">
           <h2 className="text-xl text-center text-balance text-shadow-xs tracking-wide text-shadow-primary md:text-2xl">
-            Mau jasa cepat, atau proyek jangka panjang?
+            Mau Jasa Cepat atau Proyek Jangka Panjang?
           </h2>
           <p className="text-balance tracking-wider text-shadow-xs text-shadow-primary md:text-xl">
             Hubungi kami:
