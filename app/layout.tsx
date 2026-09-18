@@ -24,11 +24,11 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <header className="bg-background-2 min-w-full items-center px-2 border-background-3 border-b-4 py-2 flex min-h-16 shrink-0">
           <Link href="#home">
-            <h1 className="tracking-tighter">{profile.name}</h1>
+            <h1 className="tracking-tighter text-shadow-md">{profile.name}</h1>
           </Link>
         </header>
 
-        <main className="flex-1 flex flex-col items-center  px-8 py-8  gap-8">
+        <main className="flex-1 flex flex-col items-center p-8 gap-9">
           <img
             aria-hidden="true"
             src="/background.webp"
@@ -38,7 +38,7 @@ export default function RootLayout({
         </main>
 
         <footer className="bg-background-2 min-w-full items-center px-2 border-background-3 border-t-4 py-2 flex min-h-16 shrink-0">
-          <small>
+          <small className="text-md text-shadow-md">
             &copy;{" "}
             <time dateTime={new Date().toISOString()}>
               {new Date().getFullYear()}
