@@ -32,7 +32,7 @@ export default function RootLayout({
           <img
             aria-hidden="true"
             src="/background.webp"
-            className="fixed top-0 left-0 -z-5 opacity-50 min-h-screen"
+            className="fixed top-0 left-0 -z-5 opacity-20 dark:opacity-50 min-h-screen"
           />
           {children}
         </main>
