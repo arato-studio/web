@@ -7,9 +7,10 @@ export default function Home() {
     <>
       <section
         id="home"
-        className="flex flex-col items-center justify-center gap-8 max-w-prose"
+        className="flex flex-col items-center justify-center gap-16"
       >
-        <h2 className="text-2xl text-center text-balance text-shadow-xs tracking-wide text-shadow-primary md:text-4xl">
+        <h2 className="text-3xl relative text-center text-balance text-shadow-xs tracking-wide text-shadow-primary md:text-6xl mt-32">
+          <div className="absolute -top-12 -left-8 bg-background-1-invert/10 min-h-96 min-w-screen -z-5" />
           Bikin{" "}
           <b>
             <i>Brand</i> Kamu
@@ -17,7 +18,7 @@ export default function Home() {
           Tampil Beda Lewat Website & Video <b>Profesional</b>.
         </h2>
 
-        <p className="max-w-md  opacity-80 text-balance border-l-muted tracking-wider border-l-4 pl-4 text-shadow-xs text-shadow-primary md:text-xl">
+        <p className="max-w-prose border-l-muted tracking-wider border-l-0 pl-0 text-shadow-xs md:text-xl mb-32 text-foreground-bright">
           Kami bantu pelajar, kreator, dan UMKM ngembangin kehadiran digital
           lewat desain web modern dan editing video yang memikat.
         </p>
