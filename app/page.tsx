@@ -49,6 +49,38 @@ export default function Home() {
           </ul>
         </article>
       </section>
+
+      <section
+        id="team"
+        className="flex flex-col flex-wrap gap-4 items-center justify-center"
+      >
+        <h2 className="text-xl md:text-2xl text-center">
+          Tim di Organisasi Kami
+        </h2>
+        <ul className="flex gap-4 flex-wrap items-center justify-center">
+          {profile.members.map((member) => {
+            return (
+              <li
+                key={member.github}
+                className="bg-primary rounded-sm border-2"
+              >
+                <a
+                  href={member.github}
+                  className="flex-col-reverse flex flex-wrap p-2"
+                >
+                  <h3 className="text-center text-black font-bold">
+                    {member.name}
+                  </h3>
+                  <img
+                    src={`${member.github}.png`}
+                    className="min-w-32 max-w-32 min-h-32 max-h-32 rounded-sm border-2 border-black"
+                  />
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
     </>
   );
 }
