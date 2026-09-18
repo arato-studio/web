@@ -15,7 +15,7 @@ export const profile = {
     {
       label: "Instagram",
       icon: "mdi:instagram",
-      to: "https://www.instagram.com/axelmychro",
+      to: "https://www.instagram.com/arato_studio2026",
       style: "border-4 border-love bg-love",
     },
     {
@@ -27,7 +27,7 @@ export const profile = {
     {
       label: "Email",
       icon: "lucide:mail",
-      to: "mailto:axelmychro@gmail.com",
+      to: "mailto:aratostudio2026@gmail.com",
       style: "bg-black text-white",
     },
   ],
