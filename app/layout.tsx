@@ -21,14 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id" className={`${go_mono.variable} antialiased`}>
-      <body className="min-h-screen flex flex-col overflow-hidden">
+      <body className="min-h-screen flex flex-col">
         <header className="bg-background-2 min-w-full items-center px-2 border-background-3 border-b-4 py-2 flex min-h-16 shrink-0">
           <Link href="#home">
             <h1 className="tracking-tighter">{profile.name}</h1>
           </Link>
         </header>
 
-        <main className="flex-1 flex flex-col items-center  px-8 py-8 overflow-auto gap-8">
+        <main className="flex-1 flex flex-col items-center  px-8 py-8  gap-8">
           <img
             aria-hidden="true"
             src="/background.webp"
