@@ -30,20 +30,22 @@ export default function Home() {
           <p className="text-balance tracking-wider text-shadow-xs text-shadow-primary md:text-xl">
             Hubungi kami:
           </p>
-          <ul className="flex gap-4 flex-wrap not-md:max-w-xs">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {profile.links.map((link) => {
               return (
                 <li
                   key={link.label}
-                  className={`${link.style} font-bold flex items-center justify-center rounded-sm flex-1 shadow-xs`}
+                  className={`${link.style} font-bold rounded-sm`}
                 >
-                  <Link
+                  <a
                     href={link.to}
-                    className="flex items-center gap-4 p-2 min-w-48 justify-center min-h-16 text-inherit tracking-widest text-xl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center p-4 min-w-48 justify-between min-h-16 text-inherit tracking-widest text-xl"
                   >
                     <Icon icon={link.icon} className="text-2xl" />
-                    {link.label}
-                  </Link>
+                    <span className="text-center flex-1">{link.label}</span>
+                  </a>
                 </li>
               );
             })}
